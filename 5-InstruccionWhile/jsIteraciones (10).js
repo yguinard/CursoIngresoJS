@@ -63,11 +63,31 @@ function Mostrar()
 		respuesta=prompt("Para continuar, s");
 	}
 
-document.write("<br>1 Suma de los Numeros negativos: " + acumuladorNegativos);
-document.write("<br>2 Suma de los Numeros Positivos: " + acumuladorPositivos);
-document.write("<br>3 cantidad Numeros positivos: " + contadorPositivos);
-document.write("<br>4 cantidad de los Numeros negativos: " + contadorNegativos);
-document.write("<br>5 cantidad de Ceros: " + cantidadDeCeros);
-document.write("<br>6 cantidad de numeros pares; " + cantidadDePares);
+	document.write("<br>1 Suma de los Numeros negativos: " + acumuladorNegativos);
+	document.write("<br>2 Suma de los Numeros Positivos: " + acumuladorPositivos);
+	document.write("<br>3 cantidad Numeros positivos: " + contadorPositivos);
+	document.write("<br>4 cantidad de los Numeros negativos: " + contadorNegativos);
+	document.write("<br>5 cantidad de Ceros: " + cantidadDeCeros);
+	document.write("<br>6 cantidad de numeros pares; " + cantidadDePares);
+
+	if(contadorPositivos>0)
+	{
+		document.write("<br>7 Promedio de Positivos; " + acumuladorPositivos/contadorPositivos);
+	}
+	else
+	{
+		document.write("<br>7 Promedio de Positivos: NO se ingresaron Num Positivos ");
+	}
+
+	if(contadorNegativos>0)
+	{
+		document.write("<br>7 Promedio de negativos; " + acumuladorNegativos/contadorNegativos);
+	}
+	else
+	{
+		document.write("<br>8 Promedio de Negativos: NO se ingresaron Num Negativos ");
+	}
+
+	document.write("<br>9 Diferencia de Positivos - negativos; " + (acumuladorPositivos - acumuladorNegativos));
 
 }//FIN DE LA FUNCIÓN
